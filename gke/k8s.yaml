@@ -6,6 +6,8 @@ spec:
   forProvider:
     location: us-east1
     initialClusterVersion: latest
+  providerConfigRef:
+    name: gcp
 
 ---
 
@@ -33,3 +35,5 @@ spec:
       maxNodeCount: 2
     management:
       autoUpgrade: false
+  providerConfigRef:
+    name: gcp
